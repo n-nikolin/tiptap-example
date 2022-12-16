@@ -23,7 +23,7 @@ const MenuBar = ({ editor }) => {
   }
 
   return (
-    <>
+    <div className="menu-bar">
       <button
         onClick={() => editor.chain().focus().toggleBold().run()}
         disabled={!editor.can().chain().focus().toggleBold().run()}
@@ -146,7 +146,7 @@ const MenuBar = ({ editor }) => {
       <button id="add" onClick={addYoutubeVideo}>
         Add YouTube video
       </button>
-    </>
+    </div>
   );
 };
 

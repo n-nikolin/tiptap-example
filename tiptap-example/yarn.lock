@@ -486,6 +486,13 @@
   resolved "https://registry.yarnpkg.com/@tiptap/extension-youtube/-/extension-youtube-2.0.0-beta.207.tgz#7b94cfd0bf6c94825d7ab74414364f4588c8d132"
   integrity sha512-fx3adbWZWCysl2Pbw2NNbOVJ+mZT1wJ8YImwXjlM976Z0AWlWY4+O4H2avHzIHQP+t9U/jaV4K6FdcHo6EjJuQ==
 
+"@tiptap/html@^2.0.0-beta.209":
+  version "2.0.0-beta.209"
+  resolved "https://registry.yarnpkg.com/@tiptap/html/-/html-2.0.0-beta.209.tgz#4e26c17b84f5447d07727c52f4726abacaeb83df"
+  integrity sha512-KE3zwFQmRW9h6RJu5/5P6/AinIhBmSuISgkWeiC5jkMytNtOJkmB33bU87qZq82lErincFUwKsVBRSlwvqlBmQ==
+  dependencies:
+    zeed-dom "^0.9.19"
+
 "@tiptap/react@^2.0.0-beta.207":
   version "2.0.0-beta.207"
   resolved "https://registry.yarnpkg.com/@tiptap/react/-/react-2.0.0-beta.207.tgz#bb43a8741e3a0f40e16330f5f689ec165f01d173"
@@ -639,6 +646,11 @@ convert-source-map@^1.7.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.9.0.tgz#7faae62353fb4213366d0ca98358d22e8368b05f"
   integrity sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==
+
+css-what@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/css-what/-/css-what-6.1.0.tgz#fb5effcf76f1ddea2c81bdfaa4de44e79bac70f4"
+  integrity sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==
 
 csstype@^3.0.2:
   version "3.1.1"
@@ -1075,3 +1087,10 @@ w3c-keyname@^2.2.0:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/w3c-keyname/-/w3c-keyname-2.2.6.tgz#8412046116bc16c5d73d4e612053ea10a189c85f"
   integrity sha512-f+fciywl1SJEniZHD6H+kUO8gOnwIr7f4ijKA6+ZvJFjeGi1r4PDLl53Ayud9O/rk64RqgoQine0feoeOU0kXg==
+
+zeed-dom@^0.9.19:
+  version "0.9.26"
+  resolved "https://registry.yarnpkg.com/zeed-dom/-/zeed-dom-0.9.26.tgz#f0127d1024b34a1233a321bd6d0275b3ba998b30"
+  integrity sha512-HWjX8rA3Y/RI32zby3KIN1D+mgskce+She4K7kRyyx62OiVxJ5FnYm8vWq0YVAja3Tf2S1M0XAc6O2lRFcMgcQ==
+  dependencies:
+    css-what "^6.1.0"

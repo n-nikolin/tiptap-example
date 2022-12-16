@@ -1,14 +1,21 @@
-button {
-  border: solid 1.5px;
-  border-radius: 0.2rem;
-  margin: 0.1rem;
-  background-color: inherit;
+*{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
 }
 
-.btn-submit{
-  display: block;
-  margin-left: auto;
-  cursor: pointer;
+.menu-bar {
+  button {
+    border: solid black 1.5px;
+    border-radius: 0.2rem;
+    margin: 0.1rem;
+    background-color: inherit;
+  }
+  .is-active {
+    padding: 1.5px;
+    background-color: black;
+    color: white;
+  }
 }
 
 iframe {
@@ -20,22 +27,49 @@ iframe {
   }
 }
 
-.is-active {
-  background-color: black;
-  color: white;
-}
 
 .container {
-  display: border-box;
+  box-sizing: border-box;
   margin: 0 auto;
+  margin-top:2rem;
   max-width: 75ch;
   border: solid;
   padding: 0.5rem;
+  .menu-bar {
+    padding-bottom: 0.4rem;
+    button {
+      border: solid 0.1rem;
+      border-radius: 0.2rem;
+      padding: 0.1rem;
+      margin: 0.1rem;
+      background-color: inherit;
+    }
+    .is-active {
+      background-color: black;
+      color: white;
+    }
+  }
 }
 
+.editor-container {
+  overflow-y: auto;
 /* Basic editor styles */
+.btn-submit button {
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  border: solid black 1.5px;
+  margin-top: 0.2rem;
+  border-radius: 0.2rem;
+  background-color: inherit;
+  padding: 0.1rem;
+}
+
 .ProseMirror {
-  display: border-box;
+  border: solid;
+  height: 36ch;
+  padding: 0.3rem;
+  overflow-y: auto;
   &:focus {
     outline: none;
   }
@@ -93,4 +127,5 @@ iframe {
     border-top: 2px solid rgba(#0d0d0d, 0.1);
     margin: 2rem 0;
   }
+}
 }
