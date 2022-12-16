@@ -1,7 +1,7 @@
 import "./index.scss";
 import MenuBar from "./MenuBar";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { EditorContent, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Image from "@tiptap/extension-image";
@@ -28,18 +28,24 @@ export default function TipTap() {
     <div className="container">
       <MenuBar editor={editor} />
       <div className="editor-container">
-      <EditorContent editor={editor} />
-      <div className="btn-submit">
-        <button
-          type="submit"
-          className="btn-submit"
-          onClick={() => {
-            console.log(editorContent.content);
-          }}
-        >
-          SUBMIT
-        </button>
-      </div>
+        <EditorContent editor={editor} />
+        <div className="btn-submit">
+          <button
+            type="submit"
+            className="btn-submit"
+            onClick={() => {
+              axios
+                .post(`http://127.0.0.1:8000/posts/`, {
+                  title: "a title",
+                  content: editorContent.content,
+                })
+                .then((res) => console.log(res.data))
+                .catch((err) => console.log(err));
+            }}
+          >
+            SUBMIT
+          </button>
+        </div>
       </div>
     </div>
   );
