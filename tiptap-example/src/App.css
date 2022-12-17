@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+button {
+  margin: 0;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.post {
+  margin-bottom: 1rem;
+}
+
+p {
+  text-align: justify;
+  text-justify: auto;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(pink, pink);
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 bottom;
+  border-radius: 10%;
+}
+
+button {
+  height: 1.55rem;
+  width: 4rem;
+  border: none;
+  background-color: rgb(205, 227, 236);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete {
+  margin-left: 0.5rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 75ch;
+}
+
+.published {
+  text-align: right;
+  color: grey;
+}
